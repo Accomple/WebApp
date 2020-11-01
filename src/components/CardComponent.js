@@ -31,7 +31,7 @@ const genderComponent = props=>{
 export default function CardComponent (props){
     return(
         <Card className="lmn">
-            <Card.Img variant="top" src={require('../cardAssests/Room.jpg')} />
+            <Card.Img variant="top" className="image" src={require('../cardAssests/Room.jpg')} />
             <Card.Body>
                 {
                     //<Card.Title>Card Title</Card.Title>
