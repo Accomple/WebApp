@@ -1,13 +1,10 @@
-
-
-
 .lmn{
 	width: 20rem;
 }
 .gender-allowed{
 	width: 20px;
 	height: 20px;
-	padding: 2px,2px,2px,2px;
+	padding: 2px;
 }
 .Line1{
 	display: flex;
@@ -21,7 +18,7 @@
 .view-location{
 	color: #60C3AD;
 	font-size: 12px;
-	padding: 2px,2px,2px,2px;
+	padding: 2px;
 	font-family:Font-Thin;
 }
 .people-count{
