@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './descComponent.css';
+import '../assets/css/descComponent.css';
 import PhotoCarousel from './photoCarousel';
 import  GoogleMapReact from 'google-map-react';
 import Button from 'react-bootstrap/Button';
