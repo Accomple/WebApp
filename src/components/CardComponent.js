@@ -51,7 +51,7 @@ export default function CardComponent (props){
 
     return(
         <Card className="lmn">
-            <Card.Img variant="top" src={ROOT_URL+props.displayPic} />
+            <Card.Img variant="top" className="image" src={ROOT_URL+props.displayPic} />
             <Card.Body>
                 <div className="Line1" >
                     <div className="building-name">
