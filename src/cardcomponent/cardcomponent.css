@@ -1,0 +1,94 @@
+
+
+
+.lmn{
+	width: 20rem;
+}
+.gender-allowed{
+	width: 20px;
+	height: 20px;
+	padding: 2px,2px,2px,2px;
+}
+.Line1{
+	display: flex;
+    justify-content: space-between;
+}
+.Line2{
+	display: flex;
+	justify-content: space-between;
+
+}
+.view-location{
+	color: #60C3AD;
+	font-size: 12px;
+	padding: 2px,2px,2px,2px;
+	font-family:Font-Thin;
+}
+.people-count{
+	width: 20px;
+	height: 20px;
+}
+.locality-name{
+	font-size: 14px;
+	font-family: Font-Light;
+}
+.Line4{
+	white-space: nowrap;
+  	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	padding-bottom: 10px;
+}
+
+.facility{
+	width: 20px;
+	height: 20px;
+}
+.Line5{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid rgb(230, 233, 234);
+	padding-top: 7px;
+}
+.price-section{
+	display: flex;
+	flex-direction: column;
+}
+.ammount{
+	font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 14px;
+    font-family: Font-Medium;
+}
+.cust-button{
+	border-radius: 2px;
+    background-color: rgb(96, 195, 173);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    padding: 11px 17px;
+    font-size: 10px;
+    cursor: pointer;
+    min-width: 125px;
+    text-transform: uppercase;
+    font-family: Font-Medium;
+    outline: none;
+}
+.starts-from{
+	font-size: 12px;
+    letter-spacing: 0.25px;
+    font-family: Font-Light;
+}
+.attributes{
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Font-Light;
+	letter-spacing: 0.30px;
+}
+.attributes-1{
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Font-Light;
+	letter-spacing: 0.25px;
+}
+.building-name{
+	font-family: Font-Medium;
+}
