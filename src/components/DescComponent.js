@@ -1,7 +1,6 @@
-
 import React from 'react';
-import '../assets/css/descComponent.css';
-import PhotoCarousel from './photoCarousel';
+import '../assets/css/DescComponent.css';
+import PhotoCarousel from './PhotoCarousel';
 import  GoogleMapReact from 'google-map-react';
 import Button from 'react-bootstrap/Button';
 
@@ -38,7 +37,8 @@ const genderInformation=(props)=>{
       );
   }
 }
-const descComponent=()=>{
+
+export default function DescComponent(){
 return(
   <div>
   <header className="Top-Bar"> 
@@ -101,5 +101,3 @@ return(
 </div>
 );
 }
-
-export default descComponent;
