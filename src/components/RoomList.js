@@ -5,14 +5,14 @@ import ROOT_URL from "../host";
 import CardComponent from "./CardComponent";
 
 export default function RoomList(){
-    let [rooms,setRooms] = React.useState([])
+    let [accommodations,setAccommodations] = React.useState([])
     let [responseLoaded,setResponseLoaded] = React.useState(false)
 
     React.useEffect(()=>{
         axios.get(`${ROOT_URL}/accommodation/`)
         .then(
             response => {
-                setRooms(response.data)
+                setAccommodations(response.data)
                 setResponseLoaded(true)
             }
         )
@@ -30,16 +30,15 @@ export default function RoomList(){
                     responseLoaded ?
                         <Row xs={2} md={3} lg={3}>
                             {
-                                rooms.map(object =>
+                                accommodations.map(object =>
                                     <Col>
                                         <
                                             CardComponent
-                                            roomName={object.room.title}
-                                            area={object.building.area}
-                                            occupancy={object.room.occupancy}
-                                            genderLabel={object.room.gender_label}
-                                            rent={object.room.rent}
-                                            displayPic={object.room.display_pic}
+                                            buildingName={object.building_name}
+                                            area={object.area}
+                                            genderLabel={object.gender_label}
+                                            rent={object.starting_rent}
+                                            displayPic={object.display_pic}
                                             perks={object.perks}
                                         />
                                     </Col>

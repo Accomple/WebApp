@@ -55,7 +55,7 @@ export default function CardComponent (props){
             <Card.Body>
                 <div className="Line1" >
                     <div className="building-name">
-                        <span>{props.roomName}</span>
+                        <span>{props.buildingName}</span>
                     </div>
                     {genderComponent(props.genderLabel)}
                 </div>
@@ -70,10 +70,15 @@ export default function CardComponent (props){
                         <span>view location</span>
                     </div>
                 </div>
-                <div className="Line3">
-                    <img className="people-count" src={require('../assets/bed.png')} alt="img"/>
-                    <span className="attributes">{props.occupancy} people</span>
-                </div>
+                {
+                    props.occupancy ?
+                        <div className="Line3">
+                            <img className="people-count" src={require('../assets/bed.png')} alt="img"/>
+                            <span className="attributes">{props.occupancy} people</span>
+                        </div>
+                    :
+                        null
+                }
                 <div className="Line4">
                     <span >
                         <img className="facility" src={require('../assets/cutlery.png')} alt="img"/>
