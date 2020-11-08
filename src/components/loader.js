@@ -1,5 +1,5 @@
 import React from 'react';
-import './loader.css';
+import '../assets/css/loader.css';
 
 const customLoader=()=>{
 	return(

@@ -1,6 +1,6 @@
 import React from 'react';
 import BuildingCard from "./BuildingCard";
-import "./roomList.css"
+import "../assets/css/roomList.css"
 
 export default function RoomList(props){
     return(

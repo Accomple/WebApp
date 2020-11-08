@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
-import "./frontPage.css";
+import "../assets/css/frontPage.css";
 import Modal from 'react-bootstrap/Modal'
 
 const FrontPage=()=>{

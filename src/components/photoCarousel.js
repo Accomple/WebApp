@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ROOT_URL from "../AvailableRooms/host";
-import './photoCarousel.css';
+import ROOT_URL from "../host";
+import '../assets/css/photoCarousel.css';
 
 const photoCarousel=props=>{
   console.log(props)

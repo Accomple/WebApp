@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+.App1{
+  display: flex ;
+  
+  margin: 10px 10px 10px 10px;
+}
+.Image{
+  height: 190px;
+  width: 250px;
+  margin: 5px 2px 5px 2px;
+
+}
+.Disc{
+  margin: 2px 3px 2px 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: black;
+  font: sans-serif;
+}
+.Disc.h3{
+  color: #90decc;
+}
+hr{
+  border : 1px solid grey;
+  margin: 0px 20px 0px 20px;
+}

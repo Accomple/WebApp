@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import './cardcomponent.css';
-import img1 from '../cardAssests/bed.png';
+import '../assets/css/cardcomponent.css';
+import img1 from '../assets/bed.png';
 
 const card =props=>{
 return(

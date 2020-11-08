@@ -1,8 +1,8 @@
 import React ,{useState,useEffect} from 'react';
-import './availableRoom.css';
+import '../assets/css/availableRoom.css';
 import CustomLoader from './loader';
 import RoomList from "./roomList";
-import ROOT_URL from "./host";
+import ROOT_URL from "../host";
 import axios from "axios";
 var timer=null;
 
@@ -19,8 +19,9 @@ const [responseLoaded,setResponseLoaded]=useState(false);
 
 const handleChange=(event)=>{
 	timer&&clearTimeout(timer);
-	timer=setTimeout(()=>{ setPrice(event.target.value)},1000);
 	setDisprice(event.target.value);
+	timer=setTimeout(()=>{ setPrice(disPrice)},1000);
+	
 }
 
 

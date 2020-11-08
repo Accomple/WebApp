@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import '../cardcomponent/cardcomponent.css';
-import male_img1 from "../cardAssests/Male_3x.png";
-import female_img2 from "../cardAssests/Female_3x.png";
-import perks_img from "../cardAssests/cutlery.png";
-import ROOT_URL from "./host";
+import '../assets/css/cardcomponent.css';
+import male_img1 from "../assets/Male_3x.png";
+import female_img2 from "../assets/Female_3x.png";
+import perks_img from "../assets/cutlery.png";
+import ROOT_URL from "../host";
 
 const genderComponent=props=>{
 	if(props==="M")

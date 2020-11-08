@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route,Switch} from 'react-router-dom';
 import FrontPage from './frontPage';
-import BuildingList from '../AvailableRooms/availableRoom';
-import BuildingDetails from '../DescComponent/descComponent';
+import BuildingList from './availableRoom';
+import BuildingDetails from './descComponent';
 const RoutingPage=()=>{
 	return(
 		<div>

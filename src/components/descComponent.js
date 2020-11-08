@@ -1,10 +1,10 @@
 import React,{useEffect,useState} from 'react';
-import './descComponent.css';
-import ROOT_URL from "../AvailableRooms/host";
-import Loader from "../AvailableRooms/loader";
+import '../assets/css/descComponent.css';
+import ROOT_URL from "../host";
+import Loader from "./loader";
 import PhotoCarousel from './photoCarousel';
 import GoogleMapReact from 'google-map-react';
-import RoomsDesc from '../cardcomponent/cardcomponent';
+import RoomsDesc from './cardcomponent';
 import axios from "axios";
 
 const facilities=(props)=>{
