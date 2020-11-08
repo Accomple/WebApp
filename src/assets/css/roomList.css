@@ -1,0 +1,8 @@
+.room-list2{
+	display: flex;
+	flex-wrap: wrap;
+}
+.col{
+  margin: 0px;
+  padding: 0px;
+}

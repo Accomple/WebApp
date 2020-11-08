@@ -1,0 +1,130 @@
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+ a:hover{
+ 	text-decoration: none;
+ 	color:rgb(96, 195, 173);
+ }
+.container{
+	text-align: left;
+}
+.card-img-top{
+	border-radius: 0px;
+}
+.Card{
+	margin: 20px;
+	display: block;
+	
+}
+.lmn{
+	width:355px;
+	margin: 15px;
+	display: block;
+	min-width: 100px;
+	border-radius: 0px;
+}
+.gender-allowed{
+	width: 20px;
+	height: 20px;
+	padding: 2px,2px,2px,2px;
+}
+.Line1{
+	display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 233, 234);
+    margin-bottom: 4px;
+}
+.attr-head{
+	font-family: Font-Thin;
+	font-size: 14px;
+}
+.Line2{
+	display: flex;
+
+	justify-content: space-between;
+
+}
+.view-location{
+	color: #60C3AD;
+	font-size: 12px;
+	padding: 2px,2px,2px,2px;
+	font-family:Font-Thin;
+}
+.people-count{
+	width: 20px;
+	height: 20px;
+}
+.locality-name{
+	font-size: 14px;
+	font-family: Font-Light;
+}
+.Line4{
+	white-space: nowrap;
+  	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	margin-top: 2px;
+ 	padding-bottom: 10px;
+ 	font-family: Font-Light;
+ 	font-size: 12px;
+}
+
+.facility{
+	width: 20px;
+	height: 20px;
+}
+.Line5{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid rgb(230, 233, 234);
+	padding-top: 7px;
+}
+.price-section{
+	display: flex;
+	flex-direction: column;
+}
+.ammount{
+	font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 14px;
+    font-family: Font-Medium;
+}
+.cust-button{
+	border-radius: 0px;
+    background-color: rgb(96, 195, 173);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(96, 195, 173);
+    padding: 8px 11px;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 125px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Font-Bold;
+    outline: none;
+
+}
+.cust-button:hover{
+	background-color: white;
+	color:rgb(96, 195, 173);
+}
+.starts-from{
+	font-size: 12px;
+    letter-spacing: 0.25px;
+    font-family: Font-Light;
+}
+.attributes{
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Font-Light;
+	letter-spacing: 0.30px;
+}
+.attributes-1{
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Font-Light;
+	letter-spacing: 0.25px;
+}
+.building-name{
+	font-family: Font-Medium;
+}
