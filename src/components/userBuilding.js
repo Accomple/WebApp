@@ -9,8 +9,9 @@ import ROOT_URL from "../host";
 import Button from 'react-bootstrap/Button';
 import likeimg from "../assets/like.png";
 import dislikeimg from "../assets/dislike.png";
-import Modal from 'react-bootstrap/Modal'
+import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
+
 const genderComponent=props=>{
 	if(props==="M")
 		return(
@@ -47,16 +48,17 @@ const clickHandler=()=>{
 				Authorization: `Token ${localStorage.getItem('token')}`
 			}
 		})
-		authAxios.post(`${ROOT_URL}/accounts/bookmark/add/building_id${"%3D"+props.id}/`)
+		authAxios.delete(`${ROOT_URL}/accounts/bookmark/delete/id${"%3D"+props.bookmark_id}/`)
 		.then((response)=>{
 			console.log(response.data)
 			handleAppear();
 			
 		});
+
 }
 
 const [show,setShow]=useState(false);
-const handleremove=()=>setShow(false);
+const handleremove=()=>{setShow(false);window.location.reload(false);};
 const handleAppear=()=>setShow(true);
 var lat=props.latitude;
 var lon=props.longitude;
@@ -85,7 +87,7 @@ return(
 			<div className="locality-name">
 				<span>{props.landmark}</span>
 			</div>
-			<img className="gender-allowed" onClick={clickHandler} src={likeimg} alt="Img"/>
+			<img className="gender-allowed" onClick={clickHandler} src={dislikeimg} alt="Img"/>
 			
 		</div>
 		<div className="Line4">
@@ -109,7 +111,7 @@ return(
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Added to favoriats</Modal.Body>
+        <Modal.Body>Removed from favorites</Modal.Body>
       </Modal>
 </Card>
 );

@@ -1,0 +1,16 @@
+.booking{
+	border-bottom: 2px solid rgb(234, 234, 234);
+	display: flex;
+	padding: 10px;
+	margin: 10px;
+	font-family: Font-Medium;
+}
+.booking-data{
+	width:500px;
+}
+.booking-label{
+	color: rgb(96, 195, 173);
+	font-family: Font-Bold;
+	width: 150px;
+	display: inline-block;
+}

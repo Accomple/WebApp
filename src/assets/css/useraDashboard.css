@@ -1,0 +1,36 @@
+.sec-1{
+	border-bottom: 2px solid rgb(234, 234, 234);
+	
+	padding: 10px;
+	margin: 10px;
+	font-family: Font-Medium;
+}
+
+.sec-label{
+	color: rgb(96, 195, 173);
+	font-family: Font-Bold;
+	width: 150px;
+	display: inline-block;
+}
+.dis-pic{
+	height:300px;
+	width: 400px;
+	padding: 10px;
+
+}
+.sec-name{
+	font-family: Font-Bold;
+	font-size: 20px;
+}
+.main-div{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	border: 3px solid  rgb(234, 234, 234);
+	width: 700px;
+}
+.sec{
+	height: 30px;
+	margin: 10px
+}

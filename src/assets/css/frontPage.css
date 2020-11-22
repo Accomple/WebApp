@@ -22,7 +22,8 @@
 	overflow-x:auto;
 }
 .modal-content{
-	height: 300px;
+	min-height: 300px;
+	max-height: 500px;
 	border-radius: 0px;
 }
 .add-custom,.add-custom:focus{
@@ -83,5 +84,13 @@
     font-family: Font-Bold;
     margin-right: 10px;
     outline: none;
+
+}
+.status{
+	font-family: Font-Medium;
+	font-size: 30px;
+	margin-top:80px;
+	margin-left:60px;
+	color:rgb(96, 195, 173);
 
 }

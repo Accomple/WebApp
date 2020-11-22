@@ -1,7 +1,7 @@
 
 .available-rooms{
  display:flex;
- flex-wrap: wrap-reverse; 
+ flex-wrap: wrap; 
 }
 .photoCarousel{
 	height: 500px;
@@ -68,8 +68,8 @@
 	font-family: Font-Bold;
 }
 .Main-Window{
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 200px;
+	margin-right: 200px;
 	margin-top:50px;
 }
 .First-Row{

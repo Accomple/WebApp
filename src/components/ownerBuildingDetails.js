@@ -4,8 +4,9 @@ import ROOT_URL from "../host";
 import Loader from "./loader";
 import PhotoCarousel from './photoCarousel';
 import GoogleMapReact from 'google-map-react';
-import RoomsDesc from './cardcomponent';
+import RoomsDesc from './ownerRoomCard';
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 const facilities=(props)=>{
 if(props==null)
@@ -48,12 +49,17 @@ const [buildingDesc,setBuildingDesc]=useState(null);
 const id=props.match.params.id;
 
 useEffect(()=>{
-   axios.get(`${ROOT_URL}/accommodations/building/get/id${"%3D"+id}/`)
+  const authAxios=axios.create({
+      headers: {
+        Authorization: `Token ${localStorage.getItem('token')}`
+      }
+    })
+  authAxios.get(`${ROOT_URL}/accounts/building/get/id${"%3D"+id}/`)
         .then(
             response => {
                 setBuildingDesc(response.data);
                 setResponseLoaded(true);
-               console.log(response.data.rooms);
+               console.log(response.data);
             }
         )
         .catch(
@@ -122,7 +128,7 @@ return(
 </div>
 </div>
 <div className="Facilities-available">
-    Available Rooms
+    Registered Rooms
   </div>
 { 
   <div className="available-rooms">
@@ -138,12 +144,16 @@ return(
                   building={object.building}
                   total={object.total}
                   available={object.available}
+                  is_verified={object.is_verified}
                   />
      );
     })
   }
   </div>  
 }
+<div>
+  <Link className="cust-button" to={`/owner/addRoom/${id}`} >+Add More Rooms</Link>
+</div>
 </div>
 </div>
 :

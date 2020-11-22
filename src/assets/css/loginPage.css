@@ -1,0 +1,99 @@
+.login-form{
+	
+	height: 100%;
+	border:solid 2px  rgb(96, 195, 173) ;
+	background-color: white;
+	width: 40%;
+	height: 400px;
+	margin-left: 30%;
+	margin-top: 50px;
+	padding: 10px 10px 10px 10px;
+
+	
+
+}
+.signlink{
+	font-size: 13px;
+	margin-bottom: 10px;
+
+}
+.step-name{
+	text-align: center;
+}
+.Form-content{
+	width:500px;
+	border: 2px solid rgb(96, 195, 173);
+	border-radius: 0.25rem;
+	padding: 10px;
+	font-family: Font-Medium;
+	color: rgb(96, 195, 173);
+}
+.signup{
+	width:100%;
+	text-align: center;
+	font-family: Font-Bold;	
+}
+.Form3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	
+}
+.login-form2{
+	
+	height: 100%;
+	border:solid 2px  rgb(96, 195, 173) ;
+	background-color: white;
+	font-family: Font-Medium;
+	color: rgb(96, 195, 173);
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	margin-top: 50px;
+	border-radius: 0.25rem;
+	padding: 10px 10px 10px 10px;
+
+	
+
+}
+ .error-text{
+ 	color: red;
+ 	font-size: 12px;
+ 	padding-bottom: 3px;
+ }
+.wrapper{
+	width: 100%;
+
+}
+.cust-button{
+	border-radius: 0px;
+    background-color: rgb(96, 195, 173);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(96, 195, 173);
+    padding: 8px 11px;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 125px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Font-Bold;
+    outline: none;
+
+}
+.cust-button:hover{
+	background-color: white;
+	color:rgb(96, 195, 173);
+	border: 2px solid rgb(96, 195, 173);
+}
+.cust-button:
+.cust-button:focus{
+	background-color: white;
+	color:rgb(96, 195, 173);
+	border: 2px solid rgb(96, 195, 173);
+}
+.cust-button:disabled{
+	background-color: white;
+	color:rgb(96, 195, 173);
+	border: 2px solid rgb(96, 195, 173);
+}
