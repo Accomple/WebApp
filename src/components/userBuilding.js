@@ -111,7 +111,7 @@ return(
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Removed from favorites</Modal.Body>
+        <Modal.Body><div className="modal-alert">Removed from favorites</div></Modal.Body>
       </Modal>
 </Card>
 );
