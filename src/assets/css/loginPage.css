@@ -97,3 +97,13 @@
 	color:rgb(96, 195, 173);
 	border: 2px solid rgb(96, 195, 173);
 }
+.otp{
+	margin: auto;
+	width: 400px;
+	text-align: center;	
+	margin-top:200px;
+		
+}
+.otp-input{
+	margin-right: 10px;
+}

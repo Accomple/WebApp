@@ -5,7 +5,12 @@
 	margin: 10px;
 	font-family: Font-Medium;
 }
-
+.content-heading{
+	padding: 10px;
+	padding-left: 20px;
+	font-family: Font-Bold;
+	font-size: 40px;
+}
 .sec-label{
 	color: rgb(96, 195, 173);
 	font-family: Font-Bold;

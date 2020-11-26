@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 import "../assets/css/loginPage.css";
 import ROOT_URL from "../host";
-
+import {Redirect} from "react-router-dom";
 
 const Signup=(props)=>{
     const [pass1,setPass1]=useState("");
@@ -18,8 +18,7 @@ const Signup=(props)=>{
     const imageUploader = React.useRef(null);
     const loginHandler=props.changeState;
     const [passEqual,setpassEqual]=useState(true)
-   
-
+    const [success,setSuccess]=useState(false);
 
     useEffect(()=>{
     
@@ -59,19 +58,21 @@ const Signup=(props)=>{
       }
       console.log((Object.fromEntries(data)));
       
-   axios.post(`{ROOT_URL}/accounts/register/`,data,{
+   axios.post(`${ROOT_URL}/accounts/register/`,data,{
     headers: {
       'Content-Type': 'multipart/form-data'
     }})
     .then(
       (response)=>{
-          console.log(response.data)
+          //console.log(response.data)
        
         setAuthenticate(true)
-        loginHandler(true);
         localStorage.setItem("token",response.data.token);
         localStorage.setItem("loggedIn",true);
         localStorage.setItem("email",email);
+        loginHandler(true);
+
+        setSuccess(true);
       }
     )
     .catch(
@@ -99,7 +100,8 @@ const Signup=(props)=>{
   };
 
   return(
-    <div className="wrapper">  
+    !success ?
+  <div className="wrapper">  
 <div className="login-form2">
   <Form name="myform" onSubmit={submitHandler}>
     <div
@@ -196,6 +198,8 @@ const Signup=(props)=>{
 </Form>
 </div>
 </div>
+:
+<Redirect to="/otpverification" />
     );
 }
 export default Signup;

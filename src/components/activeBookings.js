@@ -57,11 +57,13 @@ useEffect(()=>{
 
 
 	return(
-		loaded ?
+		<>
+		<div className="content-heading">Active Bookings</div>
+		{loaded ?
 		<div className="active-booking-list">
 			{
 				data.length===0?
-				<h1>no active bookings yet</h1>
+				<div className="status">No active bookings yet</div>
 				:
 				null
 			}
@@ -71,7 +73,8 @@ useEffect(()=>{
 		</div>
 		:
 		<Loader/>
-
+		}
+		</>
 
 	);
 }

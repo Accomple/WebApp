@@ -25,7 +25,7 @@ import CancelBookingProcessOwner from './ownerCancelbookingprocess';
 import PrivateRouteOwner from './privateRouteOwner';
 import PrivateRoutetUser from './privateRouteUser'
 import PageNotFound from './pagenotfound';
-
+import OtpVerification from './otpverification'
 const RoutingPage=()=>{
 	const [show,setShow]=useState(false);
 	const [showLoginModal,setLoginModal]=useState(false);
@@ -60,26 +60,24 @@ const RoutingPage=()=>{
 			<div>
 				<header className="top-bar">
 					<div className="bar">
-						<div className="logo">LOGO</div>
+						<div className="logo">Accomple</div>
 						<div className="bar-components">
 						<div className="component">About us</div>
 						{
 							(is_owner==="false"||!loggged)?
 								<>
-								<div className="component"><Button className="custom-button" onClick={handleLoginShow}>Partner with us</Button></div>
-								<div className="component"><Button className="custom-button" onClick={handleShow}>Explore Residences</Button></div>
+								<div className=""><Button className="custom-button3" onClick={handleLoginShow}>Partner with us</Button></div>
+								<div className="componen"><Button className="custom-button3" onClick={handleShow}>Explore Residences</Button></div>
 								</>
 								:
 								null
 						}
-
-						
 						{
 							!loggged ?
 							<>
 
-							<Link className="cust-button2" to="/login">Log in</Link>
-							<Link className="cust-button2" to="/signup">Sign Up</Link>
+							<Link className="component" to="/login">Log in</Link>
+							<Link className="component" to="/signup">Sign Up</Link>
 							</>
 							: 
 
@@ -130,7 +128,7 @@ const RoutingPage=()=>{
         <Modal.Header closeButton>
           
         </Modal.Header>
-        <Modal.Body>Please log in as owner</Modal.Body>
+        <Modal.Body ><div className="modal-alert">Please log in as owner</div></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleLoginClose}>
             Close
@@ -153,6 +151,7 @@ const RoutingPage=()=>{
 			<Route exact path="/signup" render={props=><SignUp changeState={setlogged}/>} />
 			<Route exact path="/login" render={props=><LoginPage changeState={setlogged}/>}/>
 			<Route exact path="/logout" render={props=><Logout changeState={setlogged}/>}/>
+			<Route exact path="/otpverification" component={OtpVerification}/>
 			<PrivateRouteOwner exact path="/owner/dashboard" component={OwnerDashBoard}/>
 			<PrivateRouteOwner exact path="/owner/buildingdetails/:id" component={OwnerBuildingDetails}/>
 			<PrivateRouteOwner exact path="/owner/addBuilding" component={AddBuildings}/>

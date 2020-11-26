@@ -16,6 +16,7 @@ const Logout=(props)=>{
 		localStorage.removeItem('token');
 		localStorage.removeItem('loggedIn');
 		
+		
 	},[])
 
 	return(

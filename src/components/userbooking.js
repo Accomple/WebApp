@@ -25,7 +25,7 @@ useEffect(()=>{
 	return(
 		loaded?
 		<>
-
+		<div className="content-heading">Your Bookings</div>
 		{
 		data.exists?
 		<div className="main-div">
@@ -129,8 +129,8 @@ useEffect(()=>{
 			
 		</div>
 		:
-		<div>
-		<h1>No Bookings yet</h1>
+		<div  className="status">
+		No Bookings yet
 		</div>
 	}
 		</>

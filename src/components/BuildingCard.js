@@ -85,7 +85,7 @@ return(
 			<div className="locality-name">
 				<span>{props.landmark}</span>
 			</div>
-			<img className="gender-allowed" onClick={clickHandler} src={likeimg} alt="Img"/>
+			{ localStorage.getItem('loggedIn') ? <img className="gender-allowed" onClick={clickHandler} src={likeimg} alt="Img"/>:null}
 			
 		</div>
 		<div className="Line4">
@@ -109,7 +109,7 @@ return(
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Added to favoriats</Modal.Body>
+        <Modal.Body><div className="modal-alert">Added to favorites</div></Modal.Body>
       </Modal>
 </Card>
 );

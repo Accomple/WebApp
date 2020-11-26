@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react';
 import {Redirect,Link} from 'react-router-dom';
 import axios from 'axios';
 import ROOT_URL from "../host";
+//import OTPInput,{ ResendOTP } from 'otp-input-react';
+
 const BookingProcess=(props)=>{
 const [loaded,setLoaded]=useState(false);
 

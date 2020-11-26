@@ -27,13 +27,17 @@ useEffect(()=>{
 
 
 return(
-	<div>
+	<div className="outer-body">
+    <div className="content-heading">Favorites</div>
 		{
 		!responseLoaded ?
 		<CustomLoader/>
 		:
 		<div className="room-list2">
-
+        {    
+            rooms.length==0?
+            <div className="status">Nothing to show here </div> :  
+                            <>
                             {
                                 rooms.map(object =>
                                     
@@ -55,6 +59,8 @@ return(
                                     
                                 )
                             }
+                            </>
+        }
 
          </div>
      }
