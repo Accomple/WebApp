@@ -62,10 +62,11 @@ const RoutingPage=()=>{
 					<div className="bar">
 						<div className="logo">Accomple</div>
 						<div className="bar-components">
-						<div className="component">About us</div>
+						
 						{
 							(is_owner==="false"||!loggged)?
 								<>
+								<div className="component">About us</div>
 								<div className=""><Button className="custom-button3" onClick={handleLoginShow}>Partner with us</Button></div>
 								<div className="componen"><Button className="custom-button3" onClick={handleShow}>Explore Residences</Button></div>
 								</>
@@ -111,7 +112,7 @@ const RoutingPage=()=>{
       			aria-labelledby="contained-modal-title-vcenter"
      			centered>
         	<Modal.Header closeButton>
-          		<Modal.Title>Explore best PG's in 5+ cities</Modal.Title>
+          		<Modal.Title>Explore best PG's in {cities.length-1} + cities</Modal.Title>
         	</Modal.Header>
         	<Modal.Body>
         		Select a city you want to explore

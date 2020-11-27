@@ -333,8 +333,8 @@ const handleImageUpload = e =>{
     			</Form.Group>
     			<Button className="cust-button" onClick={addPerksToArrray}>Add</Button>
   				
-				<div>
-					<h5>Perks added</h5>
+				<div className="perks">
+					<h5>Perks </h5>
 					{
 						perks.length==0?
 						<div>No perks added</div>

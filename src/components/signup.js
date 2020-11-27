@@ -19,7 +19,7 @@ const Signup=(props)=>{
     const loginHandler=props.changeState;
     const [passEqual,setpassEqual]=useState(true)
     const [success,setSuccess]=useState(false);
-
+    const [emailError,setError]=useState(false);
     useEffect(()=>{
     
       if(file!=null&&file.size>500000)
@@ -47,7 +47,7 @@ const Signup=(props)=>{
       }
       else
       {
-        data.set('profile_pic',null)
+        data.set('profile_pic',"")
       }
       if(data.get('is_owner')==="on")
       {
@@ -79,6 +79,7 @@ const Signup=(props)=>{
       (error)=>{
         //this.setState({error:error.response})
         console.log(error)
+        setError(true);
       }
     )
   
@@ -153,6 +154,9 @@ const Signup=(props)=>{
     <Form.Group  controlId="formGrsidEmail">
       <Form.Label>Email</Form.Label>
       <Form.Control type="email" placeholder="Enter email" onChange={(e)=>{setEmail(e.target.value)}} name="username" />
+      {
+        !emailError ? null:<div className="error-text">User already exist</div>
+      }
     </Form.Group>
   <Form.Row> 
     <Form.Group as={Col} controlId="formGriadPassword">
@@ -192,7 +196,7 @@ const Signup=(props)=>{
     <Form.Check type="checkbox" label="Are you owner?" name="is_owner" />
   </Form.Group>
 
-  <Button className="cust-button" disabled={ fileSizeError||!passEqual}type="submit" >
+  <Button className="cust-button" disabled={ pass1===""||fileSizeError||!passEqual}type="submit" >
     Submit
   </Button>
 </Form>

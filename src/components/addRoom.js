@@ -80,19 +80,19 @@ const documentHandler=(e)=>{
     			</Form.Group>
     			<Form.Group  controlId="formArea">
       				<Form.Label>Rent</Form.Label>
-      				<Form.Control placeholder="Area"  name="rent"/>
+      				<Form.Control  type="number" placeholder="Rent"  name="rent"/>
     			</Form.Group>
     			<Form.Group  controlId="formsLandmark">
       				<Form.Label>Description</Form.Label>
-      				<Form.Control placeholder="Contact number"  name="description"/>
+      				<Form.Control placeholder="Description"  name="description"/>
     			</Form.Group>
     			<Form.Group  controlId="formsCity">
       				<Form.Label>Total</Form.Label>
-      				<Form.Control placeholder="total availability"  name="total"/>
+      				<Form.Control  type="number" placeholder="Total availability"  name="total"/>
     			</Form.Group>
     			<Form.Group  controlId="formsState">
       				<Form.Label>Occupancy</Form.Label>
-      				<Form.Control placeholder="occupied beds"  name="occupancy"/>
+      				<Form.Control type="number"placeholder="Occupied beds"  name="occupancy"/>
     			</Form.Group>
   				<Button  className="cust-button" type="submit" disabled={loading}>
       {
@@ -125,7 +125,7 @@ const documentHandler=(e)=>{
     			</Form.Group>
     			<Form.Group  controlId="formsLandmark">
       				<Form.Label>Expiry date</Form.Label>
-      				<Form.Control placeholder="Contact number" type="date"  name="expiry_date"/>
+      				<Form.Control placeholder="Expiry Date" type="date"  name="expiry_date"/>
     			</Form.Group>
     			<Form.Group  controlId="formsCity">
       				<Form.Label>Document</Form.Label>

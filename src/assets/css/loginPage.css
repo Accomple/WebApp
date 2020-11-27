@@ -12,6 +12,13 @@
 	
 
 }
+.perks{
+	border:1px solid rgba(0,0,0,0.2);
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding: 4px;
+	border-radius: 0.25em;
+}
 .signlink{
 	font-size: 13px;
 	margin-bottom: 10px;

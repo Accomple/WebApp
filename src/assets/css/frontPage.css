@@ -59,13 +59,15 @@
 	font-family: 'Font-Medium';
 	color: #60C3AD;
 	padding: 8px 10px 8px 10px;
+	margin-left: 3px;
+	margin-right: 3px;
 	
 }
 .bar-components{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 50%;
+	
 }
 .logo{
 	font-family: 'Font-Bold';
@@ -142,7 +144,8 @@
 	border-radius: 0px;
 	background: white;
 	font-family: 'Font-Medium';
-
+	margin-left: 3px;
+	margin-right: 3px;
 	color: rgb(96, 195, 173);
 	border-color: white;
 	border-width: 2px;
