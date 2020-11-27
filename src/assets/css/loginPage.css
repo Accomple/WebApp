@@ -93,7 +93,6 @@
 	color:rgb(96, 195, 173);
 	border: 2px solid rgb(96, 195, 173);
 }
-.cust-button:
 .cust-button:focus{
 	background-color: white;
 	color:rgb(96, 195, 173);

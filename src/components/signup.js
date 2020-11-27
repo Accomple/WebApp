@@ -70,6 +70,7 @@ const Signup=(props)=>{
         localStorage.setItem("token",response.data.token);
         localStorage.setItem("loggedIn",true);
         localStorage.setItem("email",email);
+        localStorage.setItem("is_owner",response.data.is_owner);
         loginHandler(true);
 
         setSuccess(true);
