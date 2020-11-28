@@ -13,14 +13,19 @@ const city=props.match.params.city;
 const [rooms,setRooms]=useState([]);
 const [gender,setGender]=useState('');
 const [price,setPrice]=useState('');
-const [disPrice,setDisprice]=useState(9999);
+const [disPrice,setDisprice]=useState(20000);
 const [responseLoaded,setResponseLoaded]=useState(false);
-
+const [first,setFirst]=useState(true);
+useEffect(()=>{
+	if(!first)
+	timer=setTimeout(()=>{ setPrice(disPrice)},1000);
+},[disPrice])
 
 const handleChange=(event)=>{
 	timer&&clearTimeout(timer);
 	setDisprice(event.target.value);
-	timer=setTimeout(()=>{ setPrice(disPrice)},1000);
+	setFirst(false);
+	
 	
 }
 
@@ -62,6 +67,7 @@ useEffect(()=>{
 	}
 	else if(gender==="")
 	{
+		console.log(`${ROOT_URL}/accommodations/city${"%3D"+city}&rent_lte${"%3D"+price}/`)
 		setResponseLoaded(false)
 		 axios.get(`${ROOT_URL}/accommodations/city${"%3D"+city}&rent_lte${"%3D"+price}/`)
         .then(
@@ -121,8 +127,8 @@ useEffect(()=>{
 					<div className="form-field">
 						<span className="less-than">Less than </span>	
 						<span className="price-display">&#x20B9;{disPrice}</span>		
-						<input type="range" min="1" max="9999" defaultValue="9999" onChange={handleChange} className="slider"/>
-						
+						<input type="range" min="1" max="20000" defaultValue="20000" onChange={handleChange} className="slider"/>
+							
 					</div>
 				</div>	
 				<div className="room-list">
